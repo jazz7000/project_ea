@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_news_independence_korea"
+		textureFile = "gfx/event_pictures/news_independence_korea.dds"
+	}
+}

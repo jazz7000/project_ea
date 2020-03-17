@@ -1,0 +1,84 @@
+KOR_declaration_of_independence_category = {
+	
+	#독립 선언
+	KOR_declaration_of_independence = {
+
+		icon = generic_form_nation
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_declaration_of_independence_required_states_tt
+				controls_state = 525
+				controls_state = 527
+				controls_state = 797
+				controls_state = 798
+				controls_state = 799
+				controls_state = 800
+				controls_state = 801
+				controls_state = 802
+				controls_state = 803
+			}
+		}
+
+		visible = {
+			original_tag = KOR
+			NOT = { has_global_flag = independence_flag }
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			set_capital = 525
+			add_timed_idea = {
+				idea = KOR_idea_independence
+				days = 1095
+			}
+			news_event = {
+				id = pea_korea.1
+				days = 0
+			}
+			set_global_flag = KOR_independence_flag
+			hidden_effect = {
+				every_country = {
+					limit = {
+						NOT = { tag = KOR }
+					}
+					news_event = {
+						id = pea_korea.2
+						days = 0
+					}
+				}
+			}
+		}
+	}
+}
+
+KOR_constitution_category = {
+
+	#헌법 제정
+	KOR_constitution = {
+		
+		icon = generic_form_nation
+
+		available = {
+			
+		}
+
+		visible = {
+			original_tag = KOR
+			has_completed_focus = KOR_focus_constitutional_assembly_election
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			set_global_flag = KOR_constitution_flag
+		}
+
+		# days_remove = 35
+
+		# remove_effect = {
+			
+		# }
+	}
+}

@@ -1,0 +1,72 @@
+test = {
+	
+	korean_provisional_government = {
+
+		icon = decision_generic_decision
+
+		available = {
+			original_tag = GGK
+		}
+
+		visible = {
+            KOR = { exists = no }
+		}
+		
+		fire_only_once = no
+
+		complete_effect = {
+			GGK = {
+				release = KOR
+			}
+			GGK = {
+				add_state_core = 525
+				add_state_core = 527
+				add_state_core = 797
+				add_state_core = 798
+				add_state_core = 799
+				add_state_core = 800
+				add_state_core = 801
+				add_state_core = 802
+				add_state_core = 803
+			}
+			KOR = {
+				change_tag_from = GGK
+			}
+		}
+	}
+
+	government_gerenal_of_korea = {
+
+		icon = decision_generic_decision
+
+		available = {
+			original_tag = KOR
+		}
+
+		visible = {
+            GGK = { exists = no }
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			KOR = {
+				release = GGK
+			}
+			KOR = {
+				add_state_core = 525
+				add_state_core = 527
+				add_state_core = 797
+				add_state_core = 798
+				add_state_core = 799
+				add_state_core = 800
+				add_state_core = 801
+				add_state_core = 802
+				add_state_core = 803
+			}
+			GGK = {
+				change_tag_from = KOR
+			}
+		}
+	}
+}

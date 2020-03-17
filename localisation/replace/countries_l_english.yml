@@ -1,0 +1,78 @@
+﻿l_english:
+
+ #한국
+ KOR_democratic:0 "대한민국"
+ KOR_democratic_DEF:0 "대한민국"
+ KOR_communism:0 "조선민주주의인민공화국"
+ KOR_communism_DEF:0 "조선민주주의인민공화국"
+ KOR_fascism:0 "대한민국"
+ KOR_fascism_DEF:0 "대한민국"
+ KOR_neutrality:0 "대한민국 임시정부"
+ KOR_neutrality_DEF:0 "대한민국 임시정부"
+ KOR_empire_neutrality:0 "대한제국"
+ KOR_empire_neutrality_DEF:0 "대한제국"
+ KOR_fascism_ADJ:0 "한국"
+ KOR_democratic_ADJ:0 "한국"
+ KOR_communism_ADJ:0 "조선"
+ KOR_neutrality_ADJ:0 "한국"
+
+ #조선
+ GGK_fascism:0 "일본령 조선"
+ GGK_fascism_DEF:0 "일본령 조선"
+ GGK_neutrality:0 "일본령 조선"
+ GGK_neutrality_DEF:0 "일본령 조선"
+ GGK_democratic:0 "일본령 조선"
+ GGK_democratic_DEF:0 "일본령 조선"
+ GGK_communism:0 "일본령 조선"
+ GGK_communism_DEF:0 "일본령 조선"
+
+ #대만
+ GGT_fascism:0 "일본령 대만"
+ GGT_fascism_DEF:0 "일본령 대만"
+ GGT_neutrality:0 "일본령 대만"
+ GGT_neutrality_DEF:0 "일본령 대만"
+ GGT_democratic:0 "일본령 대만"
+ GGT_democratic_DEF:0 "일본령 대만"
+ GGT_communism:0 "일본령 대만"
+ GGT_communism_DEF:0 "일본령 대만"
+
+ #가라후토
+ KFP_fascism:0 "일본령 화태"
+ KFP_fascism_DEF:0 "일본령 화태"
+ KFP_neutrality:0 "일본령 화태"
+ KFP_neutrality_DEF:0 "일본령 화태"
+ KFP_democratic:0 "일본령 화태"
+ KFP_democratic_DEF:0 "일본령 화태"
+ KFP_communism:0 "일본령 화태"
+ KFP_communism_DEF:0 "일본령 화태"
+
+ #관동
+ KTP_fascism:0 "일본령 관동"
+ KTP_fascism_DEF:0 "일본령 관동"
+ KTP_neutrality:0 "일본령 관동"
+ KTP_neutrality_DEF:0 "일본령 관동"
+ KTP_democratic:0 "일본령 관동"
+ KTP_democratic_DEF:0 "일본령 관동"
+ KTP_communism:0 "일본령 관동"
+ KTP_communism_DEF:0 "일본령 관동"
+ 
+ #남양제도
+ SPM_fascism:0 "위임통치지역 남양제도"
+ SPM_fascism_DEF:0 "위임통치지역 남양제도"
+ SPM_neutrality:0 "위임통치지역 남양제도"
+ SPM_neutrality_DEF:0 "위임통치지역 남양제도"
+ SPM_democratic:0 "위임통치지역 남양제도"
+ SPM_democratic_DEF:0 "위임통치지역 남양제도"
+ SPM_communism:0 "위임통치지역 남양제도"
+ SPM_communism_DEF:0 "위임통치지역 남양제도"
+
+ #기동방공자치정부
+ EHB_fascism:0 "기동방공자치정부"
+ EHB_fascism_DEF:0 "기동방공자치정부"
+ EHB_neutrality:0 "기동방공자치정부"
+ EHB_neutrality_DEF:0 "기동방공자치정부"
+ EHB_democratic:0 "기동방공자치정부"
+ EHB_democratic_DEF:0 "기동방공자치정부"
+ EHB_communism:0 "기동방공자치정부"
+ EHB_communism_DEF:0 "기동방공자치정부"
+ 

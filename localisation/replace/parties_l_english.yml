@@ -1,0 +1,54 @@
+﻿l_english:
+ 
+ #한국
+ KOR_democratic_party:0 "민주주의"
+ KOR_democratic_party_long:0 "민주주의"
+ KOR_democratic_party_knp:0 "한국국민당"
+ KOR_democratic_party_knp_long:0 "한국국민당"
+ KOR_democratic_party_klp:0 "자유당"
+ KOR_democratic_party_klp_long:0 "자유당"
+ KOR_democratic_party_kpp:0 "조선인민당"
+ KOR_democratic_party_kpp_long:0 "조선인민당"
+ KOR_communism_party:0 "공산주의"
+ KOR_communism_party_long:0 "공산주의"
+ KOR_communism_party_cpk:0 "조선공산당"
+ KOR_communism_party_cpk_long:0 "조선공산당"
+ KOR_fascism_party:0 "파시스트"
+ KOR_fascism_party_long:0 "파시스트"
+ KOR_fascism_party_mrc:0 "군사혁명위원회"
+ KOR_fascism_party_mrc_long:0 "군사혁명위원회"
+ KOR_fascism_party_acnr:0 "국가재건최고회의"
+ KOR_fascism_party_acnr_long:0 "국가재건최고회의"
+ KOR_fascism_party_knya:0 "조선민족청년단"
+ KOR_fascism_party_knya_long:0 "조선민족청년단"
+ KOR_neutrality_party:0 "임시정부 국무위원회"
+ KOR_neutrality_party_long:0 "임시정부 국무위원회"
+ KOR_neutrality_party_cpki:0 "건국준비위원회"
+ KOR_neutrality_party_cpki_long:0 "건국준비위원회"
+ KOR_neutrality_party_ic:0 "황국협회"
+ KOR_neutrality_party_ic_long:0 "황국협회"
+ KOR_neutrality_party_ip:0 "대한제국 황실"
+ KOR_neutrality_party_ip_long:0 "대한제국 황실"
+
+ #일본령 조선
+ GGK_fascism_party:0 "조선총독부"
+ GGK_fascism_party_long:0 "조선총독부"
+ GGK_neutrality_party:0 "대한민국 임시정부"
+ GGK_neutrality_party_long:0 "대한민국 임시정부"
+
+ #일본령 대만
+ GGT_fascism_party:0 "대만총독부"
+ GGT_fascism_party_long:0 "대만총독부"
+
+ #일본령 화태
+ KFP_fascism_party:0 "가라후토청"
+ KFP_fascism_party_long:0 "가라후토청"
+
+ #일본령 관동
+ KTP_fascism_party:0 "관동주청"
+ KTP_fascism_party_long:0 "관동주청"
+
+ #일본령 남양제도
+ SPM_fascism_party:0 "남양청"
+ SPM_fascism_party_long:0 "남양청"
+ 

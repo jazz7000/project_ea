@@ -1,0 +1,6 @@
+GGK = "countries/Government General of Korea.txt"
+GGT = "countries/Government General of Taiwan.txt"
+KFP = "countries/Karafuto Prefecture.txt"
+KTP = "countries/Kwantung Prefecture.txt"
+SPM = "countries/South Pacific Mandate.txt"
+EHB = "countries/East Hebei.txt"

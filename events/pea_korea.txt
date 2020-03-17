@@ -1,0 +1,82 @@
+﻿### 한국 이벤트 ###
+add_namespace = pea_korea
+
+#독립 선언 (한국)
+news_event = {
+    id = pea_korea.1
+    title = pea_korea.1.t
+    desc = pea_korea.1.desc
+
+    picture = GFX_news_independence_korea
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = pea_korea.1.a
+        trigger = {
+            tag = KOR
+        }
+    }
+
+    option = {
+        name = pea_korea.1.a
+        trigger = {
+            NOT = { tag = KOR }
+        }
+    }
+}
+
+#과도정부 수립
+country_event = {
+    id = pea_korea.2
+    title = pea_korea.2.t
+    desc = pea_korea.2.desc
+
+    picture = GFX_report_event_generic_sign_treaty1
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = pea_korea.2.a
+        
+        set_party_name = { 
+            ideology = neutrality 
+            long_name = KOR_neutrality_party_cpki_long 
+            name = KOR_neutrality_party_cpki
+        }
+
+        #비동맹주의 - 과도정부
+        create_country_leader = {
+        	name = "National Committee"
+        	desc = ""
+        	picture = "gfx/leaders/KOR/Portrait_cpki.dds"
+        	expire = "1965.1.1"
+        	ideology = oligarchism
+        	traits = {
+
+        	}
+        }
+    }
+}
+
+#제헌 국회의원 선거
+country_event = {
+    id = pea_korea.3
+    title = pea_korea.3.t
+    desc = pea_korea.3.desc
+
+    picture = GFX_report_event_election_vote
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = pea_korea.3.a
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.1
+        }
+    }
+}

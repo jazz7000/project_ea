@@ -1,0 +1,43 @@
+﻿l_english:
+
+ #조선총독부
+ GGK_infantry_equipment_0:1 "38식 소총"
+ GGK_infantry_equipment_0_short:1 "38식"
+ GGK_infantry_equipment_1:1 "99식 소총"
+ GGK_infantry_equipment_1_short:1 "99식"
+ GGK_infantry_equipment_2:0 "100/40식"
+ GGK_infantry_equipment_2_short:0 "100/40식"
+ GGK_infantry_equipment_3:0 "100/44식"
+ GGK_infantry_equipment_3_short:0 "100/44식"
+
+ #한국
+ KOR_infantry_equipment_0:1 "38식 소총"
+ KOR_infantry_equipment_0_short:1 "38식"
+ KOR_infantry_equipment_0:1 "38식 소총"
+ KOR_infantry_equipment_0_short:1 "38식"
+ KOR_infantry_equipment_1:1 "99식 소총"
+ KOR_infantry_equipment_1_short:1 "99식"
+ KOR_infantry_equipment_2:0 "24식"
+ KOR_infantry_equipment_2_short:0 "24식"
+ KOR_infantry_equipment_3:0 "M1 개런드"
+ KOR_infantry_equipment_3_short:0 "M1 개런드"
+
+ KOR_artillery_equipment_1:0 "75 mm 견인곡사포"
+ KOR_artillery_equipment_1_short:0 "75 mm 견인곡사포"
+ KOR_artillery_equipment_2:0 "105 mm 견인곡사포"
+ KOR_artillery_equipment_3:0 "155 mm 견인곡사포"
+
+ KOR_anti_tank_equipment_1:0 "37 mm 대전차포"
+ KOR_anti_tank_equipment_1_short:0 "37 mm 대전차포"
+ KOR_anti_tank_equipment_2:0 "57 mm 대전차포"
+ KOR_anti_tank_equipment_3:0 "90 mm 대전차포"
+
+ KOR_anti_air_equipment_1:0 "37 mm 대공포"
+ KOR_anti_air_equipment_1_short:0 "37 mm 대공포"
+ KOR_anti_air_equipment_2:0 "40 mm 대공포"
+ KOR_anti_air_equipment_3:0 "90 mm 대공포"
+
+ KOR_rocket_artillery_equipment_1:0 "70 mm 다연장로켓"
+ KOR_rocket_artillery_equipment_1_short:0 "70 mm 다연장로켓"
+ KOR_rocket_artillery_equipment_2:0 "90 mm 다연장로켓"
+ KOR_rocket_artillery_equipment_2_short:0 "90 mm 다연장로켓"

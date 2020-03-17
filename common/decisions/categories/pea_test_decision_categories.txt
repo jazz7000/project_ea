@@ -1,0 +1,7 @@
+test = {
+	icon = decision_category_generic
+
+	visible = {
+		always = yes
+	}
+}

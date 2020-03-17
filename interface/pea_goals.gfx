@@ -1,0 +1,102 @@
+spriteTypes = {
+
+	### GGK ###
+
+	spriteType = {
+		name = "GFX_focus_reform_government"
+		textureFile = "gfx/interface/goals/GGK/focus_reform_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_naisen_ittai"
+		textureFile = "gfx/interface/goals/GGK/focus_naisen_ittai.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_soushikaimei"
+		textureFile = "gfx/interface/goals/GGK/focus_soushikaimei.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_conscript_korean"
+		textureFile = "gfx/interface/goals/GGK/focus_conscript_korean.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_korean_inpendence_movement"
+		textureFile = "gfx/interface/goals/GGK/focus_korean_inpendence_movement.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_leader_of_the_people"
+		textureFile = "gfx/interface/goals/GGK/focus_leader_of_the_people.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_found_independence_army"
+		textureFile = "gfx/interface/goals/GGK/focus_found_independence_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_operation_independence"
+		textureFile = "gfx/interface/goals/GGK/focus_operation_independence.dds"
+	}
+
+
+	### KOR ###
+
+	spriteType = {
+		name = "GFX_focus_cpki"
+		textureFile = "gfx/interface/goals/KOR/focus_cpki.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_constitutional_assembly_election"
+		textureFile = "gfx/interface/goals/KOR/focus_constitutional_assembly_election.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_first_republic"
+		textureFile = "gfx/interface/goals/KOR/focus_first_republic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_national_security_law"
+		textureFile = "gfx/interface/goals/KOR/focus_national_security_law.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_military_coup"
+		textureFile = "gfx/interface/goals/KOR/focus_military_coup.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_theory_of_restore_imperial_family"
+		textureFile = "gfx/interface/goals/KOR/focus_theory_of_restore_imperial_family.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_declare_empire"
+		textureFile = "gfx/interface/goals/KOR/focus_declare_empire.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_peoples_committee_of_korea"
+		textureFile = "gfx/interface/goals/KOR/focus_peoples_committee_of_korea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_rok_armed_forces"
+		textureFile = "gfx/interface/goals/KOR/focus_rok_armed_forces.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_eok_armed_forces"
+		textureFile = "gfx/interface/goals/KOR/focus_eok_armed_forces.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_kpa"
+		textureFile = "gfx/interface/goals/KOR/focus_kpa.dds"
+	}
+}

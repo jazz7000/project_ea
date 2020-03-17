@@ -1,0 +1,73 @@
+spriteTypes = {	
+	
+  	#National Spirits
+
+	spriteType = {
+		name = "GFX_idea_naisen_ittai"
+		texturefile = "gfx/interface/ideas/GGK/idea_naisen_ittai.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_korean_inpendence_movement"
+		texturefile = "gfx/interface/ideas/GGK/idea_korean_inpendence_movement.dds"
+	}
+
+	
+    spriteType = {
+		name = "GFX_idea_KOR_idea_ethnic_koreans"
+		texturefile = "gfx/interface/ideas/KOR/idea_ethnic_koreans.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_KOR_idea_firepower_supremacy"
+		texturefile = "gfx/interface/ideas/KOR/idea_firepower_supremacy.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_KOR_idea_independence_army"
+		texturefile = "gfx/interface/ideas/KOR/idea_independence_army.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_KOR_idea_independence_war"
+		texturefile = "gfx/interface/ideas/KOR/idea_independence_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_idea_pro_japanese_collaborators"
+		texturefile = "gfx/interface/ideas/KOR/idea_pro_japanese_collaborators.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_idea_ideological_conflict"
+		texturefile = "gfx/interface/ideas/KOR/idea_ideological_conflict.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_idea_illiteracy_population"
+		texturefile = "gfx/interface/ideas/KOR/idea_illiteracy_population.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_idea_unstable_industry"
+		texturefile = "gfx/interface/ideas/KOR/idea_unstable_industry.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_KOR_idea_independence"
+		texturefile = "gfx/interface/ideas/KOR/idea_independence.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_KOR_idea_house_of_yi"
+		texturefile = "gfx/interface/ideas/KOR/idea_house_of_yi.dds"
+	}
+
+
+	### Political Advisor ###
+
+	spriteType = {
+		name = "GFX_idea_GGK_advisor_shigezo_hayashi"
+		texturefile = "gfx/interface/ideas/GGK/advisor_shigezo_hayashi.dds"
+	}
+}

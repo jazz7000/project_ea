@@ -1,0 +1,1045 @@
+focus_tree = {
+	id = ggk_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GGK
+		}
+	}
+
+	continuous_focus_position = { x = 20 y = 1100 }
+
+	#총독부 개편
+    focus = {
+		id = GGK_focus_reform_government
+		icon = GFX_focus_reform_government
+        text = GGK_focus_reform_government
+		x = 7
+		y = 0
+		cost = 5
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+
+	#내선일체
+    focus = {
+		id = GGK_focus_naisen_ittai
+		icon = GFX_focus_naisen_ittai
+        text = GGK_focus_naisen_ittai
+		relative_position_id = GGK_focus_reform_government
+		x = -5
+		y = 1
+		cost = 5
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = GGK_focus_reform_government
+		}
+
+		mutually_exclusive = {
+			focus = GGK_focus_korean_inpendence_movement
+		}
+
+		completion_reward = {
+			add_autonomy_score = {
+				value = -50
+				localization = GGK_focus_naisen_ittai
+			}
+			add_ideas = GGK_idea_naisen_ittai
+		}
+	}
+
+	# #민족말살정책
+    # focus = {
+	# 	id = GGK_focus_policy_of_annihilate_people
+	# 	icon = GFX_focus_CZE_german_puppet
+    #     text = GGK_focus_policy_of_annihilate_people
+	# 	relative_position_id = GGK_focus_naisen_ittai
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+
+	# 	prerequisite = {
+	# 		focus = GGK_focus_naisen_ittai
+	# 	}
+
+	# 	available = {
+	# 		has_country_leader = {
+	# 			name = "Jirō Minami"
+	# 			ruling_only = yes
+	# 		}
+	# 	}
+
+	# 	completion_reward = {
+	# 		add_autonomy_score = {
+	# 			value = -50
+	# 			localization = GGK_focus_policy_of_annihilate_people
+	# 		}
+	# 		swap_ideas = {
+	# 			remove_idea = GGK_idea_naisen_ittai
+	# 			add_idea = GGK_idea_naisen_ittai_2
+	# 		}
+	# 	}
+	# }
+
+	# #일본어 교육 의무화
+    # focus = {
+	# 	id = GGK_focus_mandatory_of_study_japanese
+	# 	icon = GFX_focus_generic_military_academy
+    #     text = GGK_focus_mandatory_of_study_japanese
+	# 	relative_position_id = GGK_focus_policy_of_annihilate_people
+	# 	x = -1
+	# 	y = 1
+	# 	cost = 10
+
+	# 	prerequisite = {
+	# 		focus = GGK_focus_policy_of_annihilate_people
+	# 	}
+
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = GGK_idea_naisen_ittai_2
+	# 			add_idea = GGK_idea_naisen_ittai_3
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = GGK_idea_naisen_ittai_3
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = GGK_idea_naisen_ittai_3
+	# 				add_idea = GGK_idea_naisen_ittai_4
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# #창씨개명
+    # focus = {
+	# 	id = GGK_focus_soushikaimei
+	# 	icon = GFX_focus_soushikaimei
+    #     text = GGK_focus_soushikaimei
+	# 	relative_position_id = GGK_focus_policy_of_annihilate_people
+	# 	x = 1
+	# 	y = 1
+	# 	cost = 10
+
+	# 	prerequisite = {
+	# 		focus = GGK_focus_policy_of_annihilate_people
+	# 	}
+
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = GGK_idea_naisen_ittai_2
+	# 			add_idea = GGK_idea_naisen_ittai_3
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_idea = GGK_idea_naisen_ittai_3
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = GGK_idea_naisen_ittai_3
+	# 				add_idea = GGK_idea_naisen_ittai_4
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	# #황민화 정책
+    # focus = {
+	# 	id = GGK_focus_kouminka_seisaku
+	# 	icon = GFX_focus_jap_spiritual_mobilization
+    #     text = GGK_focus_kouminka_seisaku
+	# 	relative_position_id = GGK_focus_policy_of_annihilate_people
+	# 	x = 0
+	# 	y = 2
+	# 	cost = 10
+
+	# 	prerequisite = {
+	# 		focus = GGK_focus_mandatory_of_study_japanese
+	# 	}
+
+	# 	prerequisite = {
+	# 		focus = GGK_focus_soushikaimei
+	# 	}
+
+	# 	completion_reward = {
+	# 		add_autonomy_score = {
+	# 			value = -100
+	# 			localization = GGK_focus_kouminka_seisaku
+	# 		}
+	# 		swap_ideas = {
+	# 			remove_idea = GGK_idea_naisen_ittai_4
+	# 			add_idea = GGK_idea_naisen_ittai_5
+	# 		}
+	# 	}
+	# }
+
+	# #조선인 강제 징병
+    # focus = {
+	# 	id = GGK_focus_conscript_korean
+	# 	icon = GFX_focus_conscript_korean
+    #     text = GGK_focus_conscript_korean
+	# 	relative_position_id = GGK_focus_kouminka_seisaku
+	# 	x = -1
+	# 	y = 1
+	# 	cost = 10
+
+	# 	prerequisite = {
+	# 		focus = GGK_focus_kouminka_seisaku
+	# 	}
+
+	# 	completion_reward = {
+	# 		unlock_decision_tooltip = conscript_korean
+	# 	}
+	# }
+
+	# #조선인 강제 징용
+    # focus = {
+	# 	id = GGK_focus_impress_korean
+	# 	icon = GFX_goal_generic_construction2
+    #     text = GGK_focus_impress_korean
+	# 	relative_position_id = GGK_focus_kouminka_seisaku
+	# 	x = 1	
+	# 	y = 1
+	# 	cost = 10
+
+	# 	prerequisite = {
+	# 		focus = GGK_focus_kouminka_seisaku
+	# 	}
+
+	# 	completion_reward = {
+	# 		unlock_decision_tooltip = impress_korean
+	# 	}
+	# }
+
+	# #조선-내지 행정 일원화
+    # focus = {
+	# 	id = GGK_focus_unify_administration_chosen_and_gaichi
+	# 	icon = GFX_goal_generic_intelligence_exchange
+    #     text = GGK_focus_unify_administration_chosen_and_gaichi
+	# 	relative_position_id = GGK_focus_kouminka_seisaku
+	# 	x = 0
+	# 	y = 2
+	# 	cost = 10
+
+	# 	prerequisite = {
+	# 		focus = GGK_focus_impress_korean
+	# 	}
+
+	# 	prerequisite = {
+	# 		focus = GGK_focus_conscript_korean
+	# 	}
+
+	# 	completion_reward = {
+	# 		add_political_power = 100
+	# 		add_autonomy_score = {
+	# 			value = -100
+	# 			localization = GGK_focus_unify_administration_chosen_and_gaichi
+	# 		}
+	# 	}
+	# }
+
+	# #조선 내지 편입
+    # focus = {
+	# 	id = GGK_focus_intergrate_chosen
+	# 	icon = GFX_focus_jap_pacific_guardian
+    #     text = GGK_focus_intergrate_chosen
+	# 	relative_position_id = GGK_focus_unify_administration_chosen_and_gaichi
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 30
+
+	# 	prerequisite = {
+	# 		focus = GGK_focus_unify_administration_chosen_and_gaichi
+	# 	}
+
+	# 	available = {
+	# 		compare_autonomy_progress_ratio < 0.01
+	# 	}
+
+	# 	completion_reward = {
+	# 		every_state = {
+	# 			limit = {
+	# 				is_core_of = GGK
+	# 			}
+	# 			add_core_of = JAP
+	# 		}
+	# 		hidden_effect = {
+	# 			every_state = {
+	# 				limit = {
+	# 					is_core_of = GGK
+	# 				}
+	# 				remove_core_of = GGK
+	# 			}
+	# 		}
+	# 		JAP = {
+	# 			annex_country = {
+	# 				target = GGK
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+
+	#한국 독립운동
+    focus = {
+		id = GGK_focus_korean_inpendence_movement
+		icon = GFX_focus_korean_inpendence_movement
+        text = GGK_focus_korean_inpendence_movement
+		relative_position_id = GGK_focus_reform_government
+		x = 5
+		y = 1
+		cost = 5
+
+		prerequisite = {
+			focus = GGK_focus_reform_government
+		}
+
+		mutually_exclusive = {
+			focus = GGK_focus_naisen_ittai
+		}
+
+		completion_reward = {
+			add_ideas = GGK_idea_korean_inpendence_movement
+		}
+	}
+
+	#내부 분열의 종식
+    focus = {
+		id = GGK_focus_end_of_internal_discord
+		icon = GFX_goal_generic_national_unity
+        text = GGK_focus_end_of_internal_discord
+		relative_position_id = GGK_focus_korean_inpendence_movement
+		x = -1
+		y = 1
+		cost = 10
+
+		prerequisite = {
+			focus = GGK_focus_korean_inpendence_movement
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = pea_ggk.5
+				days = 0
+			}
+		}
+	}
+
+	#임시정부의 정통성
+    focus = {
+		id = GGK_focus_legitimacy_of_government
+		icon = GFX_goal_generic_improve_relations
+        text = GGK_focus_legitimacy_of_government
+		relative_position_id = GGK_focus_korean_inpendence_movement
+		x = 1
+		y = 1
+		cost = 10
+
+		prerequisite = {
+			focus = GGK_focus_korean_inpendence_movement
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = pea_ggk.6
+				days = 0
+			}
+		}
+	}
+
+	#민족의 지도자
+    focus = {
+		id = GGK_focus_leader_of_the_people
+		icon = GFX_focus_leader_of_the_people
+        text = GGK_focus_leader_of_the_people
+		relative_position_id = GGK_focus_end_of_internal_discord
+		x = 0
+		y = 1
+		cost = 5
+
+		prerequisite = {
+			focus = GGK_focus_end_of_internal_discord
+		}
+
+		prerequisite = {
+			focus = GGK_focus_legitimacy_of_government
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = pea_ggk.7
+				days = 0
+			}
+		}
+	}
+
+	#국내 활동 재개
+    focus = {
+		id = GGK_focus_resume_internal_activity
+		icon = GFX_focus_prc_infiltration
+        text = GGK_focus_resume_internal_activity
+		relative_position_id = GGK_focus_legitimacy_of_government
+		x = 0
+		y = 1
+		cost = 5
+
+		prerequisite = {
+			focus = GGK_focus_end_of_internal_discord
+		}
+
+		prerequisite = {
+			focus = GGK_focus_legitimacy_of_government
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GGK_idea_korean_inpendence_movement
+				add_idea = GGK_idea_korean_inpendence_movement_2
+			}
+		}
+	}
+
+	#무장투쟁론
+    focus = {
+		id = GGK_focus_armed_struggle_theory
+		icon = GFX_goal_generic_small_arms
+        text = GGK_focus_armed_struggle_theory
+		relative_position_id = GGK_focus_leader_of_the_people
+		x = 1
+		y = 1
+		cost = 5
+
+		prerequisite = {
+			focus = GGK_focus_leader_of_the_people
+		}
+
+		prerequisite = {
+			focus = GGK_focus_resume_internal_activity
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = pea_ggk.8
+				days = 0
+			}
+		}
+	}
+
+	#한국광복군 창설
+    focus = {
+		id = GGK_focus_found_independence_army
+		icon = GFX_focus_found_independence_army
+        text = GGK_focus_found_independence_army
+		relative_position_id = GGK_focus_armed_struggle_theory
+		x = -1
+		y = 1
+		cost = 10
+
+		available = {
+			CHI = {
+				has_war_with = JAP
+				has_capitulated = no
+			}
+		}
+
+		prerequisite = {
+			focus = GGK_focus_armed_struggle_theory
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = pea_ggk.9
+				days = 0
+			}
+		}
+	}
+
+	#미국과의 협력
+    focus = {
+		id = GGK_focus_cooperation_with_the_usa
+		icon = GFX_focus_chi_mission_to_the_us
+        text = GGK_focus_cooperation_with_the_usa
+		relative_position_id = GGK_focus_armed_struggle_theory
+		x = 1
+		y = 1
+		cost = 10
+
+		prerequisite = {
+			focus = GGK_focus_armed_struggle_theory
+		}
+		
+		completion_reward = {
+			USA = {
+				country_event = {
+					id = pea_ggk.10
+					days = 0
+				}
+			}
+		}
+	}
+
+	#국내정진군 편성
+    focus = {
+		id = GGK_focus_organize_homeland_recovery_army
+		icon = GFX_focus_generic_little_entente
+        text = GGK_focus_organize_homeland_recovery_army
+		relative_position_id = GGK_focus_found_independence_army
+		x = 0
+		y = 1
+		cost = 15
+
+		prerequisite = {
+			focus = GGK_focus_found_independence_army
+		}
+
+		prerequisite = {
+			focus = GGK_focus_cooperation_with_the_usa
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = pea_ggk.13
+				days = 0
+			}
+		}
+	}
+
+	#건국강령 제정
+    focus = {
+		id = GGK_focus_doctrine_of_foundation
+		icon = GFX_focus_generic_treaty
+        text = GGK_focus_doctrine_of_foundation
+		relative_position_id = GGK_focus_cooperation_with_the_usa
+		x = 0
+		y = 1
+		cost = 15
+
+		prerequisite = {
+			focus = GGK_focus_found_independence_army
+		}
+
+		prerequisite = {
+			focus = GGK_focus_cooperation_with_the_usa
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = pea_ggk.14
+				days = 0
+			}
+		}
+	}
+
+	#작전명 광복
+    focus = {
+		id = GGK_focus_operation_independence
+		icon = GFX_focus_operation_independence
+        text = GGK_focus_operation_independence
+		relative_position_id = GGK_focus_organize_homeland_recovery_army
+		x = 1
+		y = 1
+		cost = 16.5
+
+		available = {
+			neutrality > 0.5
+		}
+
+		prerequisite = {
+			focus = GGK_focus_organize_homeland_recovery_army
+		}
+
+		prerequisite = {
+			focus = GGK_focus_doctrine_of_foundation
+		}
+		
+		completion_reward = {
+			hidden_effect = {
+				KOR = {
+					remove_state_core = 525
+					remove_state_core = 527
+					remove_state_core = 797
+					remove_state_core = 798
+					remove_state_core = 799
+					remove_state_core = 800
+					remove_state_core = 801
+					remove_state_core = 802
+				}
+				release = KOR
+				KOR = {
+					add_state_core = 525
+					add_state_core = 527
+					add_state_core = 797
+					add_state_core = 798
+					add_state_core = 799
+					add_state_core = 800
+					add_state_core = 801
+					add_state_core = 802
+					declare_war_on = {
+						target = GGK
+						type = take_core_state
+					}
+					division_template = {
+						name = "한국 광복군"
+						priority = 1
+						division_names_group = KOR_KIA_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+						}
+						support = {
+							artillery = { x = 0 y = 0 }
+							recon = { x = 0 y = 1 }
+							engineer = { x = 0 y = 2 }
+						}
+						priority = 2
+					}
+					delete_unit_template_and_units = {
+						division_template = "주둔지 사단"
+					}
+					delete_unit_template_and_units = {
+						division_template = "보병사단"
+					}
+					set_province_controller = 7221
+					set_province_controller = 10110
+					set_province_controller = 1054
+					set_province_controller = 11835
+					525 = {
+						create_unit = {
+							division = "name = \"광복군 제1사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 7221
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제2사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 7221
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제3사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 7221
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제4사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 7221
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제5사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 7221
+							owner = KOR
+						}
+					}
+					802 = {
+						create_unit = {
+							division = "name = \"광복군 제6사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 10110
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제7사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 10110
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제8사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 10110
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제9사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 10110
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제10사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 10110
+							owner = KOR
+						}
+					}
+					801 = {
+						create_unit = {
+							division = "name = \"광복군 제11사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 1054
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제12사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 1054
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제13사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 1054
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제14사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 1054
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제15사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 1054
+							owner = KOR
+						}
+					}
+					798 = {
+						create_unit = {
+							division = "name = \"광복군 제16사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 11835
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제17사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 11835
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제18사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 11835
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제19사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 11835
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제20사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 11835
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제21사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 11835
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제22사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 11835
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제23사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 11835
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제24사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 11835
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제25사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 11835
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제26사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 11835
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제27사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 11835
+							owner = KOR
+						}
+					}
+					803 = {
+						create_unit = {
+							division = "name = \"광복군 제28사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 1177
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제29사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 1177
+							owner = KOR
+						}
+						create_unit = {
+							division = "name = \"광복군 제30사단\" division_template = \"한국 광복군\" start_experience_factor = 0.75"
+							prioritize_location = 1177
+							owner = KOR
+						}
+					}
+					if = {
+						limit = {
+							# USA = {
+							# 	has_global_flag = USA_seek_help_korea_promised
+							# }
+							always = no
+						}
+						add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 5000
+							producer = CHI
+						}
+						add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 2000
+							producer = USA
+						}
+						add_equipment_to_stockpile = {
+							type = support_equipment_1
+							amount = 1000
+							producer = USA
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					CHI = {
+						has_war_with = JAP
+					}
+				}
+				CHI = {
+					set_faction_name = korean_chinese_united_front
+					add_to_faction = KOR
+				}
+			}
+			custom_effect_tooltip = GGK_focus_operation_independence_tt
+			country_event = {
+				id = pea_ggk.15
+				days = 0
+			}
+		}
+	}
+
+
+	#경제 개발 정책
+    focus = {
+		id = GGK_focus_economy_policy
+		icon = GFX_goal_generic_construct_civilian
+        text = GGK_focus_economy_policy
+		relative_position_id = GGK_focus_reform_government
+		x = 0
+		y = 2
+		cost = 5
+
+		prerequisite = {
+			focus = GGK_focus_naisen_ittai
+			focus = GGK_focus_korean_inpendence_movement
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GGK_idea_militarize_korean_peninsula
+				add_idea = GGK_idea_militarize_korean_peninsula_2
+			}
+		}
+	}
+	
+	#산업 확충
+    focus = {
+		id = GGK_focus_expand_industry
+		icon = GFX_goal_generic_construct_civ_factory
+        text = GGK_focus_expand_industry
+		relative_position_id = GGK_focus_economy_policy
+		x = -2
+		y = 1
+		cost = 10
+
+		prerequisite = {
+			focus = GGK_focus_economy_policy
+		}
+		
+		completion_reward = {
+			797 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			798 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			799 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#경공업 확장
+    focus = {
+		id = GGK_focus_extend_light_industry
+		icon = GFX_goal_generic_construct_civ_factory
+        text = GGK_focus_extend_light_industry
+		relative_position_id = GGK_focus_expand_industry
+		x = 0
+		y = 1
+		cost = 10
+
+		prerequisite = {
+			focus = GGK_focus_expand_industry
+		}
+		
+		completion_reward = {
+			525 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			527 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#군비 확충
+    focus = {
+		id = GGK_focus_expand_military
+		icon = GFX_goal_generic_construct_mil_factory
+        text = GGK_focus_expand_military
+		relative_position_id = GGK_focus_economy_policy
+		x = 0
+		y = 1
+		cost = 10
+
+		prerequisite = {
+			focus = GGK_focus_economy_policy
+		}
+		
+		completion_reward = {
+			797 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			798 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			799 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#인천 조병창
+    focus = {
+		id = GGK_focus_jinsen_armory
+		icon = GFX_goal_generic_construct_mil_factory
+        text = GGK_focus_jinsen_armory
+		relative_position_id = GGK_focus_expand_military
+		x = 0
+		y = 1
+		cost = 10
+
+		prerequisite = {
+			focus = GGK_focus_expand_military
+		}
+		
+		completion_reward = {
+			525 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#텅스텐 광산 확충
+    focus = {
+		id = GGK_focus_tungsten
+		icon = GFX_focus_generic_tungsten
+        text = GGK_focus_tungsten
+		relative_position_id = GGK_focus_economy_policy
+		x = 2
+		y = 1
+		cost = 10
+
+		prerequisite = {
+			focus = GGK_focus_economy_policy
+		}
+		
+		completion_reward = {
+			add_resource = {
+				type = tungsten
+				amount = 20
+				state = 797
+			}
+			add_resource = {
+				type = tungsten
+				amount = 20
+				state = 527
+			}
+		}
+	}
+	
+	#철광산 확충
+    focus = {
+		id = GGK_focus_steel
+		icon = GFX_focus_generic_steel
+        text = GGK_focus_steel
+		relative_position_id = GGK_focus_tungsten
+		x = 0
+		y = 1
+		cost = 10
+
+		prerequisite = {
+			focus = GGK_focus_tungsten
+		}
+		
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 50
+				state = 801
+			}
+		}
+	}
+}

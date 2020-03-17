@@ -1,0 +1,19 @@
+KOR_declaration_of_independence_category = {
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_declaration_of_independence
+
+	allowed = {
+		always = yes
+	}
+}
+
+KOR_constitution_category = {
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_declaration_of_independence
+
+	allowed = {
+		always = yes
+	}
+}

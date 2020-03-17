@@ -1,0 +1,167 @@
+﻿KOR_KIA_01 = 
+{
+	name = "한국 광복군"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "광복군 제%d사단"
+	ordered =
+	{
+		1 = { "광복군 제%d사단" }
+	}
+}
+
+KOR_GAR_01 = 
+{
+	name = "향토보병사단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "향토보병사단"
+	ordered =
+	{
+		1 = { "향토보병사단" }
+	}
+}
+
+KOR_INF_01 = 
+{
+	name = "보병사단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	fallback_name = "보병사단"
+	ordered =
+	{
+		1 = { "제1보병사단 '전진'" }
+		51 = { "제51보병사단 '전승'" }
+		52 = { "제52보병사단 '화살'" }
+		53 = { "제53보병사단 '충렬'" }
+	}
+}
+
+KOR_MOT_01 = 
+{
+	name = "차량화보병사단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	fallback_name = "차량화보병사단"
+	ordered =
+	{
+		1 = { "차량화보병사단" }
+	}
+}
+
+KOR_MOT_02 = 
+{
+	name = "차량화보병여단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	fallback_name = "차량화보병여단"
+	ordered =
+	{
+		1 = { "차량화보병여단" }
+	}
+}
+
+KOR_MEC_01 = 
+{
+	name = "기계화보병사단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	fallback_name = "기계화보병사단"
+	ordered =
+	{
+		1 = { "기계화보병사단" }
+	}
+}
+
+KOR_ARM_01 = 
+{
+	name = "기갑사단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	fallback_name = "기갑사단"
+	ordered =
+	{
+		1 = { "기갑사단" }
+	}
+}
+
+KOR_ARM_02 = 
+{
+	name = "기갑여단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	fallback_name = "기갑여단"
+	ordered =
+	{
+		1 = { "기갑여단" }
+	}
+}
+
+KOR_MAR_01 = 
+{
+	name = "해병사단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "marine" }
+	fallback_name = "해병사단"
+	ordered =
+	{
+		1 = { "해병사단" }
+	}
+}
+
+KOR_MAR_02 = 
+{
+	name = "해병여단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "marine" }
+	fallback_name = "해병여단"
+	ordered =
+	{
+		1 = { "해병여단" }
+	}
+}
+
+KOR_PAR_01 = 
+{
+	name = "공수사단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "paratrooper" }
+	fallback_name = "공수사단"
+	ordered =
+	{
+		1 = { "공수사단" }
+	}
+}
+
+KOR_PAR_02 = 
+{
+	name = "공수여단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "paratrooper" }
+	fallback_name = "공수여단"
+	ordered =
+	{
+		1 = { "공수여단" }
+	}
+}
+
+KOR_CAV_01 = 
+{
+	name = "헌병단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "cavalry" }
+	fallback_name = "헌병단"
+	ordered =
+	{
+		1 = { "헌병단" }
+	}
+}

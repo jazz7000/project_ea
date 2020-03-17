@@ -1,0 +1,352 @@
+﻿### 조선총독부 이벤트 ###
+add_namespace = pea_ggk
+
+#본토의 병력 지원
+country_event = {
+    id = pea_ggk.1
+    title = pea_ggk.1.t
+    desc = pea_ggk.1.desc
+    picture = GFX_report_event_generic_military_parade
+
+    is_triggered_only = yes
+
+    option = {
+        name = pea_ggk.1.a
+        add_manpower = 20000
+        JAP = {
+	        add_manpower = -20000
+        }
+    }
+}
+
+#미나미 지로 총독 취임
+country_event = {
+    id = pea_ggk.2
+    title = pea_ggk.2.t
+    desc = pea_ggk.2.desc
+    picture = GFX_report_event_generic_military_parade
+
+    fire_only_once = yes
+    
+    trigger = {
+		original_tag = GGK
+		date > 1936.8.4
+	}
+
+    mean_time_to_happen = {
+		days = 1
+	}
+
+    option = {
+        name = pea_ggk.2.a
+		ai_chance = { factor = 100 }
+        create_country_leader = {
+            name = "Jirō Minami"
+            desc = ""
+            picture = "gfx/leaders/JAP_colony/Portrait_Jiro_Minami.dds"
+            expire = "1965.1.1"
+            ideology = fascism_ideology
+            traits = {
+
+            }
+        }
+    }
+}
+
+#고이소 구니아키 총독 취임
+country_event = {
+    id = pea_ggk.3
+    title = pea_ggk.3.t
+    desc = pea_ggk.3.desc
+    picture = GFX_report_event_generic_military_parade
+
+    fire_only_once = yes
+    
+    trigger = {
+		original_tag = GGK
+		date > 1942.5.28
+        NOT = {
+            OR = {
+                has_country_leader = {
+                    name = "Koiso Kuniaki"
+                    ruling_only = yes
+                }
+                has_country_leader = {
+                    name = "Abe Nobuyuki"
+                    ruling_only = yes
+                }
+            }
+        }
+	}
+
+    mean_time_to_happen = {
+		days = 1
+	}
+
+    option = {
+        name = pea_ggk.3.a
+		ai_chance = { factor = 100 }
+        create_country_leader = {
+            name = "Koiso Kuniaki"
+            desc = ""
+            picture = "gfx/leaders/JAP_colony/Portrait_Koiso_Kuniaki.dds"
+            expire = "1965.1.1"
+            ideology = fascism_ideology
+            traits = {
+
+            }
+        }
+    }
+}
+
+#아베 노부유키 총독 취임
+country_event = {
+    id = pea_ggk.4
+    title = pea_ggk.4.t
+    desc = pea_ggk.4.desc
+    picture = GFX_report_event_generic_military_parade
+
+    fire_only_once = yes
+    
+    trigger = {
+		original_tag = GGK
+		date > 1944.7.23
+	}
+
+    mean_time_to_happen = {
+		days = 1
+	}
+
+    option = {
+        name = pea_ggk.4.a
+		ai_chance = { factor = 100 }
+        create_country_leader = {
+            name = "Abe Nobuyuki"
+            desc = ""
+            picture = "gfx/leaders/JAP_colony/Portrait_Abe_Nobuyuki.dds"
+            expire = "1965.1.1"
+            ideology = fascism_ideology
+            traits = {
+
+            }
+        }
+    }
+}
+
+#임시정부의 연립내각 구성
+country_event = {
+    id = pea_ggk.5
+    title = pea_ggk.5.t
+    desc = pea_ggk.5.desc
+    picture = GFX_report_event_generic_military_parade
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = pea_ggk.5.a
+    }
+}
+
+#임시정부에 합류한 독립운동가들
+country_event = {
+    id = pea_ggk.6
+    title = pea_ggk.6.t
+    desc = pea_ggk.6.desc
+    picture = GFX_report_event_generic_military_parade
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = pea_ggk.6.a
+    }
+}
+
+#임시정부의 주석제 도입
+country_event = {
+    id = pea_ggk.7
+    title = pea_ggk.7.t
+    desc = pea_ggk.7.desc
+    picture = GFX_report_event_generic_military_parade
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = pea_ggk.7.a
+    }
+}
+
+#무장투쟁론의 대두
+country_event = {
+    id = pea_ggk.8
+    title = pea_ggk.8.t
+    desc = pea_ggk.8.desc
+    picture = GFX_report_event_generic_military_parade
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = pea_ggk.8.a
+    }
+}
+
+#한국광복군 창설
+country_event = {
+    id = pea_ggk.9
+    title = pea_ggk.9.t
+    desc = pea_ggk.9.desc
+    picture = GFX_report_event_generic_military_parade
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = pea_ggk.9.a
+    }
+}
+
+#대한민국 임시정부의 지원 요청
+country_event = {
+    id = pea_ggk.10
+    title = pea_ggk.10.t
+    desc = pea_ggk.10.desc
+    picture = GFX_report_event_generic_military_parade
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = pea_ggk.10.a
+        ai_chance = {
+            base = 100
+            modifier = {
+				factor = 10
+				has_opinion_modifier = panay_inc_opinion_modifier
+			}
+            modifier = {
+				factor = 10
+				JAP = { has_offensive_war_with = CHI }
+			}
+            modifier = {
+				factor = 10
+				NOT = { JAP = { has_idea = MTG_naval_treaty_adherent } }
+			}
+        }
+        set_global_flag = USA_seek_help_korea_promised
+        GGK = {
+            country_event = {
+                id = pea_ggk.11
+                days = 1
+            }
+        }
+    }
+    
+    option = {
+        name = pea_ggk.10.b
+        ai_chance = {
+            base = 10
+            modifier = {
+                factor = 100
+                is_in_faction_with = JAP
+            }
+        }
+        country_event = {
+            id = pea_ggk.12
+            days = 0
+        }
+    }
+}
+
+#미국의 지원 요청 수락
+country_event = {
+    id = pea_ggk.11
+    title = pea_ggk.11.t
+    desc = pea_ggk.11.desc
+    picture = GFX_report_event_generic_military_parade
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = pea_ggk.11.a
+    }
+}
+
+#미국의 지원 요청 거절
+country_event = {
+    id = pea_ggk.12
+    title = pea_ggk.12.t
+    desc = pea_ggk.12.desc
+    picture = GFX_report_event_generic_military_parade
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = pea_ggk.12.a
+    }
+}
+
+#국내정진군 편성
+country_event = {
+    id = pea_ggk.13
+    title = pea_ggk.13.t
+    desc = {
+        text = pea_ggk.13.desc_USA_helps
+        trigger = {
+            USA = {
+                has_global_flag = USA_seek_help_korea_promised
+            }
+        }
+    }
+    desc = {
+        text = pea_ggk.13.desc_USA_not_helps
+        trigger = {
+            USA = {
+                NOT = { has_global_flag = USA_seek_help_korea_promised }
+            }
+        }
+    }
+    picture = GFX_report_event_generic_military_parade
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = pea_ggk.13.a
+    }
+}
+
+#국내정진군 편성
+country_event = {
+    id = pea_ggk.14
+    title = pea_ggk.14.t
+    desc = pea_ggk.14.desc
+    picture = GFX_report_event_generic_military_parade
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = pea_ggk.14.a
+    }
+}
+
+#작전명 광복
+country_event = {
+    id = pea_ggk.15
+    title = pea_ggk.15.t
+    desc = pea_ggk.15.desc
+    picture = GFX_report_event_generic_military_parade
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = pea_ggk.15.a
+        KOR = { change_tag_from = GGK }
+    }
+}

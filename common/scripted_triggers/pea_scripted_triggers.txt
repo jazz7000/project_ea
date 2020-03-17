@@ -1,0 +1,26 @@
+#	Example:
+#
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		example_trigger = yes
+#	}
+#
+
+JAP_autonomy_check = {
+	has_dlc = "Waking the Tiger"
+	AND = {
+		OR = {
+			has_government = fascism
+			has_government = neutrality
+			has_government = democratic
+		}
+		OVERLORD = { original_tag = JAP }
+	}
+}

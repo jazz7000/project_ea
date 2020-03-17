@@ -1,0 +1,20 @@
+spriteTypes = {
+
+	### GGK ###
+	spriteType = {
+		name = "GFX_ideology_GGK_fascism_group"
+		textureFile = "gfx/interface/ideologies/GGK/ggk.dds"
+	}
+
+	### GGT ###
+	spriteType = {
+		name = "GFX_ideology_GGT_fascism_group"
+		textureFile = "gfx/interface/ideologies/GGT/ggt.dds"
+	}
+
+	### KOR ###
+	spriteType = {
+		name = "GFX_ideology_KOR_neutrality_group"
+		textureFile = "gfx/interface/ideologies/KOR/kpg.dds"
+	}
+}

@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	### KOR ###
+	spriteType = {
+		name = "GFX_decision_cat_declaration_of_independence"
+		texturefile = "gfx/interface/decisions/decision_cat_declaration_of_independence.dds"
+	}
+}

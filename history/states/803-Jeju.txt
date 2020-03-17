@@ -1,0 +1,32 @@
+state = {
+	id = 803
+	name = "STATE_803" #제주
+	manpower = 50000
+
+	state_category = rural
+	
+	history = {
+		owner = GGK
+		add_core_of = KOR
+		# add_core_of = GGK
+		
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			1177 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			1177 10 #제주
+		}
+	}
+
+	resources = {
+		
+	}
+
+	provinces = {
+		1177 
+	}
+}

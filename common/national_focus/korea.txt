@@ -1,0 +1,641 @@
+focus_tree = {
+	id = korean_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = KOR
+		}
+	}
+
+	continuous_focus_position = { x = 20 y = 1500 }
+
+	# #독립 선언
+    # focus = {
+	# 	id = KOR_focus_declare_independence
+	# 	icon = GFX_goal_generic_territory_or_war
+    #     text = KOR_focus_declare_independence
+	# 	x = 15
+	# 	y = 0
+	# 	cost = 1
+
+	# 	completion_reward = {
+	# 		country_event = {
+	# 			id = pea_korea.1
+	# 			days = 0
+	# 		}
+	# 	}
+	# }
+	
+	#과도정부 수립
+    focus = {
+		id = KOR_focus_cpki
+		icon = GFX_focus_cpki
+        text = KOR_focus_cpki
+		# relative_position_id = KOR_focus_declare_independence
+		x = 9
+		y = 0
+		cost = 5
+		
+		# prerequisite = {
+		# 	focus = KOR_focus_declare_independence
+		# }
+
+		available = {
+			has_global_flag = KOR_independence_flag
+		}
+
+		completion_reward = {
+			country_event = {
+				id = pea_korea.2
+				days = 0
+			}
+		}
+	}
+	
+	#제헌 국회의원 선거
+    focus = {
+		id = KOR_focus_constitutional_assembly_election
+		icon = GFX_focus_constitutional_assembly_election
+        text = KOR_focus_constitutional_assembly_election
+		relative_position_id = KOR_focus_cpki
+		x = 0
+		y = 1
+		cost = 5
+		
+		prerequisite = {
+			focus = KOR_focus_cpki
+		}
+
+		# mutually_exclusive = {
+		# 	focus = KOR_focus_peoples_committee_of_korea
+		# }
+
+		completion_reward = {
+			country_event = {
+				id = pea_korea.3
+				days = 0
+			}
+			unlock_decision_tooltip = KOR_constitution
+		}
+	}
+	
+	#제1공화국 선포
+    focus = {
+		id = KOR_focus_first_republic
+		icon = GFX_focus_first_republic
+        text = KOR_focus_first_republic
+		relative_position_id = KOR_focus_constitutional_assembly_election
+		x = 0
+		y = 1
+		cost = 10
+
+		available = {
+			has_global_flag = KOR_constitution_flag
+			democratic > 0.3
+		}
+		
+		prerequisite = {
+			focus = KOR_focus_constitutional_assembly_election
+		}
+
+		mutually_exclusive = {
+			# focus = KOR_focus_nationalism_propaganda
+			# focus = KOR_focus_spirit_of_monarchism
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	# #거국내각 구성
+    # focus = {
+	# 	id = KOR_focus_national_unity_government
+	# 	icon = GFX_goal_generic_major_alliance
+    #     text = KOR_focus_national_unity_government
+	# 	relative_position_id = KOR_focus_establish_democratic_government
+	# 	x = -4
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_establish_democratic_government
+	# 	}
+
+	# 	mutually_exclusive = {
+	# 		focus = KOR_focus_sam_gyun_ju_ui
+	# 		focus = KOR_focus_authoritarianism
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+	# #양대 거물 암살
+    # focus = {
+	# 	id = KOR_focus_assassinate_two_prominent_tycoon
+	# 	icon = GFX_focus_rom_parties_end
+    #     text = KOR_focus_assassinate_two_prominent_tycoon
+	# 	relative_position_id = KOR_focus_form_coalition_cabinet
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_form_coalition_cabinet
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+	# #대국민화합
+    # focus = {
+	# 	id = KOR_focus_great_national_unity
+	# 	icon = GFX_goal_generic_national_unity
+    #     text = KOR_focus_great_national_unity
+	# 	relative_position_id = KOR_focus_assassinate_two_prominent_tycoon
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_assassinate_two_prominent_tycoon
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+	# #지방자치제도 실시
+    # focus = {
+	# 	id = KOR_focus_local_self_governing_system
+	# 	icon = GFX_focus_generic_the_giant_wakes
+    #     text = KOR_focus_local_self_governing_system
+	# 	relative_position_id = KOR_focus_great_national_unity
+	# 	x = -1
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_great_national_unity
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+	
+	# #삼균주의
+    # focus = {
+	# 	id = KOR_focus_sam_gyun_ju_ui
+	# 	icon = GFX_goal_generic_neutrality_focus
+    #   	text = KOR_focus_sam_gyun_ju_ui
+	# 	relative_position_id = KOR_focus_establish_democratic_government
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_establish_democratic_government
+	# 	}
+		
+	# 	mutually_exclusive = {
+	# 		focus = KOR_focus_form_coalition_cabinet
+	# 		focus = KOR_focus_authoritarianism
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+	# #권위주의
+    # focus = {
+	# 	id = KOR_focus_authoritarianism
+	# 	icon = GFX_goal_tfv_saf_support_ossebrandwag
+    #   	text = KOR_focus_authoritarianism
+	# 	relative_position_id = KOR_focus_establish_democratic_government
+	# 	x = 4
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_establish_democratic_government
+	# 	}
+		
+	# 	mutually_exclusive = {
+	# 		focus = KOR_focus_form_coalition_cabinet
+	# 		focus = KOR_focus_sam_gyun_ju_ui
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+	# #반공주의
+    # focus = {
+	# 	id = KOR_focus_anti_communism
+	# 	icon = GFX_goal_anti_comintern_pact
+    #  	text = KOR_focus_anti_communism
+	# 	relative_position_id = KOR_focus_sam_gyun_ju_ui
+	# 	x = 2
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_sam_gyun_ju_ui
+	# 		focus = KOR_focus_authoritarianism
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+	# #국가보안법
+    # focus = {
+	# 	id = KOR_focus_national_security_law
+	# 	icon = GFX_focus_national_security_law
+    #   	text = KOR_focus_national_security_law
+	# 	relative_position_id = KOR_focus_anti_communism
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_anti_communism
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+	# #공산주의자 탄압
+    # focus = {
+	# 	id = KOR_focus_crackdown_communists
+	# 	icon = GFX_goal_generic_war_with_comintern
+    #   text = KOR_focus_crackdown_communists
+	# 	relative_position_id = KOR_focus_national_security_law
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_national_security_law
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+	# #반대파 제거
+    # focus = {
+	# 	id = KOR_focus_eliminate_oppositions
+	# 	icon = GFX_goal_generic_political_pressure
+    #   text = KOR_focus_eliminate_oppositions
+	# 	relative_position_id = KOR_focus_authoritarianism
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_authoritarianism
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+	# #대통령 종신집권
+    # focus = {
+	# 	id = KOR_focus_lifetime_seizure_of_power
+	# 	icon = GFX_focus_usa_voter_registration_act
+    #   text = KOR_focus_lifetime_seizure_of_power
+	# 	relative_position_id = KOR_focus_eliminate_oppositions
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_eliminate_oppositions
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+
+	# #국가주의 선전
+    # focus = {
+	# 	id = KOR_focus_nationalism_propaganda
+	# 	icon = GFX_goal_support_fascism
+    #     text = KOR_focus_nationalism_propaganda
+	# 	relative_position_id = KOR_focus_constitutional_assembly_election
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_constitutional_assembly_election
+	# 	}
+
+	# 	mutually_exclusive = {
+	# 		focus = KOR_focus_establish_democratic_government
+	# 		focus = KOR_focus_spirit_of_monarchism
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+	
+	# #군사 쿠데타
+    # focus = {
+	# 	id = KOR_focus_military_coup
+	# 	icon = GFX_focus_military_coup
+    #     text = KOR_focus_military_coup
+	# 	relative_position_id = KOR_focus_nationalism_propaganda
+	# 	x = -1
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_nationalism_propaganda
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+	# #우익 단체와의 동맹
+    # focus = {
+	# 	id = KOR_focus_ally_with_the_right
+	# 	icon = GFX_focus_generic_diplomatic_treaty
+    #     text = KOR_focus_ally_with_the_right
+	# 	relative_position_id = KOR_focus_nationalism_propaganda
+	# 	x = 1
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_nationalism_propaganda
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+	
+	# #계엄령 선포
+    # focus = {
+	# 	id = KOR_focus_martial_law
+	# 	icon = GFX_goal_generic_attack_allies
+    #     text = KOR_focus_martial_law
+	# 	relative_position_id = KOR_focus_military_coup
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_military_coup
+	# 	}
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_ally_with_the_right
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+	
+	# #비협조적 인사 숙청
+    # focus = {
+	# 	id = KOR_focus_purge_uncooperative_personage
+	# 	icon = GFX_goal_generic_forceful_treaty
+    #     text = KOR_focus_purge_uncooperative_personage
+	# 	relative_position_id = KOR_focus_ally_with_the_right
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_military_coup
+	# 	}
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_ally_with_the_right
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+
+	
+	# #복벽주의의 부활
+    # focus = {
+	# 	id = KOR_focus_spirit_of_monarchism
+	# 	icon = GFX_focus_rom_royal_dictatorship
+    #     text = KOR_focus_spirit_of_monarchism
+	# 	relative_position_id = KOR_focus_constitutional_assembly_election
+	# 	x = 4
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_constitutional_assembly_election
+	# 	}
+
+	# 	mutually_exclusive = {
+	# 		focus = KOR_focus_establish_democratic_government
+	# 		focus = KOR_focus_nationalism_propaganda
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+	# #황국협회 설립
+    # focus = {
+	# 	id = KOR_focus_imperial_club
+	# 	icon = GFX_goal_tfv_strengthen_commonwealth_ties
+    #     text = KOR_focus_imperial_club
+	# 	relative_position_id = KOR_focus_spirit_of_monarchism
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_spirit_of_monarchism
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+	# #황실복원론
+    # focus = {
+	# 	id = KOR_focus_theory_of_restore_imperial_family
+	# 	icon = GFX_focus_theory_of_restore_imperial_family
+    #     text = KOR_focus_theory_of_restore_imperial_family
+	# 	relative_position_id = KOR_focus_imperial_club
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+
+	# 	prerequisite = {
+	# 		focus = KOR_focus_imperial_club
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+	# #대한제국 선포
+    # focus = {
+	# 	id = KOR_focus_declare_empire
+	# 	icon = GFX_focus_declare_empire
+    #     text = KOR_focus_declare_empire
+	# 	relative_position_id = KOR_focus_theory_of_restore_imperial_family
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_theory_of_restore_imperial_family
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+
+	# #조선인민위원회 건설
+    # focus = {
+	# 	id = KOR_focus_peoples_committee_of_korea
+	# 	icon = GFX_focus_peoples_committee_of_korea
+    #     text = KOR_focus_peoples_committee_of_korea
+	# 	relative_position_id = KOR_focus_declare_independence
+	# 	x = 6
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_declare_independence
+	# 	}
+
+	# 	mutually_exclusive = {
+	# 		focus = KOR_focus_constitutional_assembly_election
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+
+	
+	# #국방경비대 창설
+    # focus = {
+	# 	id = KOR_focus_found_ndf
+	# 	icon = GFX_focus_generic_little_entente
+    #   text = "국방경비대 창설"
+	# 	x = 23
+	# 	y = 0
+	# 	cost = 10
+
+	# 	completion_reward = {
+			
+	# 	}
+	# }
+	
+	# #대한민국 국군
+    # focus = {
+	# 	id = KOR_focus_rok_armed_forces
+	# 	icon = GFX_focus_rok_armed_forces
+    #   text = "대한민국 국군"
+	# 	relative_position_id = KOR_focus_found_ndf
+	# 	x = -2
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_found_ndf
+	# 	}
+
+	# 	mutually_exclusive = {
+	# 		focus = KOR_focus_eok_armed_forces
+	# 		focus = KOR_focus_kpa
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+	
+	# #대한제국군
+    # focus = {
+	# 	id = KOR_focus_eok_armed_forces
+	# 	icon = GFX_focus_eok_armed_forces
+    #   text = "대한제국군"
+	# 	relative_position_id = KOR_focus_found_ndf
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_found_ndf
+	# 	}
+
+	# 	mutually_exclusive = {
+	# 		focus = KOR_focus_rok_armed_forces
+	# 		focus = KOR_focus_kpa
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+	
+	# #조선인민군
+    # focus = {
+	# 	id = KOR_focus_kpa
+	# 	icon = GFX_focus_kpa
+    #   text = "조선인민군"
+	# 	relative_position_id = KOR_focus_found_ndf
+	# 	x = 2
+	# 	y = 1
+	# 	cost = 10
+		
+	# 	prerequisite = {
+	# 		focus = KOR_focus_found_ndf
+	# 	}
+
+	# 	mutually_exclusive = {
+	# 		focus = KOR_focus_rok_armed_forces
+	# 		focus = KOR_focus_eok_armed_forces
+	# 	}
+
+	# 	completion_reward = {
+
+	# 	}
+	# }
+}

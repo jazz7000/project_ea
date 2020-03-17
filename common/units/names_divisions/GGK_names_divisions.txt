@@ -1,0 +1,24 @@
+﻿GGK_GAR_01 = 
+{
+	name = "주둔지 사단"
+	for_countries = { GGK }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "주둔지 사단"
+	ordered =
+	{
+		1 = { "주둔지 사단" }
+	}
+}
+
+GGK_INF_01 = 
+{
+	name = "보병사단"
+	for_countries = { GGK }
+	can_use = { always = yes }
+	fallback_name = "보병사단"
+	ordered =
+	{
+		1 = { "보병사단" }
+	}
+}

@@ -1,0 +1,114 @@
+﻿capital = 525 #경성
+
+oob = "KOR_1936"
+
+#안정도
+set_stability = 0.5
+
+#전쟁 지지도
+set_war_support = 0.7
+
+#시작 기술
+set_technology = {
+	infantry_weapons = 1 #기초 보병 장비
+	infantry_weapons1 = 1 #보병 장비 I
+	support_weapons = 1 #지원 화기 I
+
+	tech_support = 1 #지원 장비
+	tech_engineers = 1 #공병 I
+	tech_recon = 1 #수색 I
+
+	gw_artillery = 1 #견인포
+
+	superior_firepower = 1 #압도적인 화력
+	sup_delay = 1 #지연
+	mobile_defence = 1 #기동 방어
+}
+
+#국민 정신
+add_ideas = {
+	KOR_idea_firepower_supremacy
+	KOR_idea_independence_army
+	KOR_idea_independence_war
+	KOR_idea_pro_japanese_collaborators
+	KOR_idea_ideological_conflict
+	KOR_idea_illiteracy_population
+	KOR_idea_the_poor
+	KOR_idea_unstable_industry
+
+	limited_conscription
+	closed_economy
+	war_economy
+}
+
+#연구 슬롯
+set_research_slots = 3
+
+#수송선
+set_convoys = 10
+
+#연료 비율
+# set_fuel_ratio = 0.5
+
+#지지도
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 5
+	neutrality = 50
+	democratic = 10
+	communism = 35
+}
+
+
+#민주주의 - 이승만
+create_country_leader = {
+	name = "Syngman Rhee"
+	desc = "POLITICS_Kim_Koo_DESC"
+	picture = "gfx/leaders/KOR/Portrait_Syngman_Rhee.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+
+	}
+}
+
+#공산주의 - 김일성
+create_country_leader = {
+	name = "Kim Ilsung"
+	desc = "POLITICS_Kim_Koo_DESC"
+	picture = "gfx/leaders/KOR/Portrait_Kim_Ilsung.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+
+	}
+}
+
+#비동맹주의 - 임시정부 국무위원화
+create_country_leader = {
+	name = "Kim Koo"
+	desc = "POLITICS_Kim_Koo_DESC"
+	picture = "gfx/leaders/KOR/Portrait_Kim_Koo.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+
+	}
+}
+
+#비동맹주의 - 과도정부
+# create_country_leader = {
+# 	name = "Interim Government"
+# 	desc = ""
+# 	picture = "gfx/leaders/KOR/Portrait_Provisional_Government.dds"
+# 	expire = "1965.1.1"
+# 	ideology = oligarchism
+# 	traits = {
+
+# 	}
+# }

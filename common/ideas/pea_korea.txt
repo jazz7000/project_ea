@@ -1,0 +1,259 @@
+ideas = {
+
+	#국민 정신
+	country = {
+
+		#화력지상주의
+		KOR_idea_firepower_supremacy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_artillery_attack_factor = 0.1
+			}
+
+			research_bonus = {
+				cat_superior_firepower = 0.15
+			}
+		}
+
+		#한국 광복군
+		KOR_idea_independence_army = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				attrition = -0.1
+				army_morale_factor = 0.10
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		#조국해방전쟁
+		KOR_idea_independence_war = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.35
+				surrender_limit = 0.5
+				war_support_factor = 0.3
+			}
+		}
+
+		#친일반민족행위자
+		KOR_idea_pro_japanese_collaborators = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				surrender_limit = -0.2
+			}
+		}
+
+		#이념 갈등
+		KOR_idea_ideological_conflict = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.15
+			}
+		}
+
+		#문맹 인구
+		KOR_idea_illiteracy_population  = {
+
+			picture = chi_incompetent_officers
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				research_speed_factor = -0.2
+			}
+		}
+
+		#빈민 문제
+		KOR_idea_the_poor  = {
+
+			picture = raj_risk_of_famine
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.1
+			}
+		}
+
+		#불안정한 산업
+		KOR_idea_unstable_industry  = {
+			
+			picture = FRA_factory_strikes
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.15
+				line_change_production_efficiency_factor = -0.2
+			}
+
+			research_bonus = {
+				industry = -0.1
+			}
+		}
+
+		#대한 독립
+		KOR_idea_independence = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.2
+				stability_weekly = 0.001
+				MONTHLY_POPULATION = 0.1
+			}
+		}
+		
+		#국회
+		KOR_idea_national_assmebly = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				democratic_drift = 0.01
+			}
+		}
+	}
+
+	#정치 조언가
+	political_advisor = {
+		
+	}
+
+	#전차 설계사
+	tank_manufacturer = {
+		
+	}
+
+	#함선 설계사
+	naval_manufacturer = {
+		
+	}
+
+	#항공기 설계사
+	aircraft_manufacturer = {
+		
+	}
+
+	#군수품 설계사
+	materiel_manufacturer = {
+
+		designer = yes
+		
+	}
+
+	#산업 업체
+	industrial_concern = {
+		
+	}
+
+	#육군 참모총장
+	army_chief = {
+		
+	}
+
+	#해군 참모총장
+	navy_chief = {
+		
+	}
+
+	#공군 참모총장
+	air_chief = {
+		
+	}
+
+	#군 고위 지휘관
+	high_command = {
+		
+	}
+
+	#이론가
+	theorist = {
+		
+	}
+}

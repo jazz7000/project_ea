@@ -1,0 +1,29 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			GGK = {
+				add_manpower = 700
+			}
+			JAP = {
+				add_manpower = -700
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					tag = GGK
+					has_manpower < 1000
+				}
+				GGK = {
+					country_event = {
+						id = pea_ggk.1
+						days = 0
+					}
+				}
+			}
+		}
+	}
+}
