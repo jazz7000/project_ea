@@ -45,8 +45,17 @@ spriteTypes = {
 		name = "GFX_idea_KOR_idea_house_of_yi"
 		texturefile = "gfx/interface/ideas/KOR/idea_house_of_yi.dds"
 	}
-
-
+	
+	spriteType = {
+		name = "GFX_JAP_yen"
+		texturefile = "gfx/interface/ideas/JAP/JAP_yen.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_JAP_co_prosper"
+		texturefile = "gfx/interface/ideas/JAP/JAP_co_prosper.dds"
+	}
+	
 	### Political Advisor ###
 
 	## GGK ##

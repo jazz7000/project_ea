@@ -109,24 +109,7 @@ ideas = {
 		}
 		JAP_en_bloc = {
 		
-			picture = generic_political_support
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-			}
-		}
-		JAP_naval_treaty = {
-		
-			picture = generic_the_london_naval_treaty
+			picture = JAP_yen
 			
 			allowed = {
 				always = no
