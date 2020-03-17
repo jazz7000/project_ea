@@ -68,11 +68,11 @@ country_event = {
         NOT = {
             OR = {
                 has_country_leader = {
-                    name = "Koiso Kuniaki"
+                    name = "Kuniaki Koiso"
                     ruling_only = yes
                 }
                 has_country_leader = {
-                    name = "Abe Nobuyuki"
+                    name = "Nobuyuki Abe"
                     ruling_only = yes
                 }
             }
@@ -87,7 +87,7 @@ country_event = {
         name = pea_ggk.3.a
 		ai_chance = { factor = 100 }
         create_country_leader = {
-            name = "Koiso Kuniaki"
+            name = "Kuniaki Koiso"
             desc = ""
             picture = "gfx/leaders/JAP_colony/Portrait_Koiso_Kuniaki.dds"
             expire = "1965.1.1"
@@ -121,7 +121,7 @@ country_event = {
         name = pea_ggk.4.a
 		ai_chance = { factor = 100 }
         create_country_leader = {
-            name = "Abe Nobuyuki"
+            name = "Nobuyuki Abe"
             desc = ""
             picture = "gfx/leaders/JAP_colony/Portrait_Abe_Nobuyuki.dds"
             expire = "1965.1.1"
