@@ -76,3 +76,12 @@
  EHB_communism:0 "기동방공자치정부"
  EHB_communism_DEF:0 "기동방공자치정부"
  
+  #중화민국
+ CHI_fascism:0 "중화민국"
+ CHI_fascism_DEF:0 "중화민국"
+ CHI_neutrality:0 "중화민국"
+ CHI_neutrality_DEF:0 "중화민국"
+ CHI_democratic:0 "중화민국"
+ CHI_democratic_DEF:0 "중화민국"
+ CHI_communism:0 "중화인민공화국"
+ CHI_communism_DEF:0 "중화인민공화국" 
