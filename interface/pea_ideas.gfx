@@ -46,13 +46,17 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/KOR/idea_house_of_yi.dds"
 	}
 	
+	###Ideas###
+	
+	###JAP###
+	
 	spriteType = {
-		name = "GFX_JAP_yen"
+		name = "GFX_idea_JAP_en_bloc"
 		texturefile = "gfx/interface/ideas/JAP/JAP_yen.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_JAP_co_prosper"
+		name = "GFX_idea_JAP_profit_line"
 		texturefile = "gfx/interface/ideas/JAP/JAP_co_prosper.dds"
 	}
 	

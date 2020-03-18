@@ -1,6 +1,6 @@
-##################
-#scripted by NIKA#
-##################
+#################
+#####by NIKA#####
+#################
 ideas = {
 
 	country = {
@@ -75,7 +75,7 @@ ideas = {
 		}
 		JAP_expansionism = {
 		
-			picture = warrior_traditions_idea
+			picture = eng_imperial_conscription
 			
 			allowed = {
 				always = no
@@ -108,8 +108,6 @@ ideas = {
 			}
 		}
 		JAP_en_bloc = {
-		
-			picture = JAP_yen
 			
 			allowed = {
 				always = no
@@ -176,8 +174,6 @@ ideas = {
 			}
 		}
 		JAP_profit_line = {
-		
-			picture = 
 			
 			allowed = {
 				always = no
